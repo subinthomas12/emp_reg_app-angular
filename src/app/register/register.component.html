@@ -1,0 +1,51 @@
+<div class="flexbox-container">
+
+    <div class="flexbox-item flexbox-item-1">
+        <form [formGroup]="registerForm" style="padding: 40px;" action="">
+
+            <div>
+                <h2>Add Employee</h2>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <input formControlName="empid" class="form-control" type="text" name="Employeeid" placeholder="Employee ID..">
+
+                <div *ngIf="this.registerForm.get('empid')?.errors && this.registerForm.get('empid')?.touched ">
+                   <p class="text-danger">Include Numbers Only</p> 
+                </div>
+            </div>
+
+            <div>
+                <input formControlName="empname" class="form-control" type="text" name="Employeename" placeholder="Employee Name..">
+
+                <div *ngIf="this.registerForm.get('empname')?.errors && this.registerForm.get('empname')?.touched ">
+                    <p class="text-danger">Include Numbers Only</p> 
+                 </div>
+            </div>
+
+            <div>
+                <input formControlName="empdesig" class="form-control" type="text" name="Employeedes" placeholder="Designation..">
+
+                <div *ngIf="this.registerForm.get('empdesig')?.errors && this.registerForm.get('empdesig')?.touched ">
+                    <p class="text-danger">Include Numbers Only</p> 
+                 </div>
+            </div>
+
+            <div>
+                <input formControlName="empsalary" class="form-control" type="text" name="Employeesal" placeholder="Salary..">
+
+                <div *ngIf="this.registerForm.get('empsalary')?.errors && this.registerForm.get('empsalary')?.touched ">
+                    <p class="text-danger">Include Numbers Only</p> 
+                 </div>
+            </div>
+
+            <hr>
+
+            <div (click)="register()" id="logi">
+                <button>REGISTER</button>
+            </div>         
+
+          
+        </form>
+    </div>
+</div>

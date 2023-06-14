@@ -1,0 +1,65 @@
+.flexbox-container{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .flexbox-item{
+        width: 600px;
+        height: 500px;
+        margin: 10px;
+        border: 3px solid #333;
+        background-color: #ffffff28;
+        border: 3px solid #fff;
+        border-radius: 12px;
+    }
+    
+    .flexbox-item-1{
+        min-height: 100px;
+    }
+
+    h2{
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    ::placeholder{
+        font-weight: 500;
+    }
+
+    input{
+        margin-top: 15px;
+    }
+    
+    #logi{
+        text-align: center;
+    }
+    
+    button{
+        text-align: center;
+        color: #fff;
+        background-color: black;
+        opacity: 0.6;
+        width: 150px;
+        height: 40px;
+        margin-top: 25px;
+        font-weight: bold;
+        border: none;
+        border-radius: 12px;
+    }
+    
+    button:hover{
+        color: #fff;
+        background-color: #1A638E;
+        opacity: 0.9;
+    }
+    
+    input, label{
+        margin-top: 10px;
+    }
+
+    hr{
+        margin-top: 30px;
+        color: #fff;
+    }

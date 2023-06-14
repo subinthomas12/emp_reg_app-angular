@@ -1,0 +1,27 @@
+<div class="flexbox-container">
+
+    <div class="flexbox-item flexbox-item-1">
+
+        <form style="padding: 40px;" action="">
+
+            <input [(ngModel)]="empid" type="text" placeholder="Search Employee.." name="empid1">
+            <button (click)="search()" type=""><i class="las la-search"></i></button>
+
+        </form>
+
+    </div>
+
+    <div [ngClass]="empid?'':'s1'" class="flexbox-item flexbox-item-2">
+
+        <form style="padding: 20px;" action="">
+        
+            <div>
+                <h3>Employee ID: {{empid1}}</h3>
+                <h3>Employee Name: {{empname}}</h3>
+                <h3>Employee Designation: {{empdesig}}</h3>
+                <h3>Employee Salary: {{empsalary}}</h3>
+
+            </div>
+        </form>
+    </div>
+</div>

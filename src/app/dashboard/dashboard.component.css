@@ -1,0 +1,48 @@
+
+.flexbox-container{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .flexbox-item{
+        width: 400px;
+        height: 220px;
+        margin: 10px;
+        border: 3px solid #333;
+        background-color: #ffffff28;
+        border: 3px solid #fff;
+        border-radius: 12px;
+    }
+    
+    .flexbox-item-1{
+        min-height: 100px;
+    }
+
+    .flexbox-item-2{
+        min-height: 100px;
+    }
+
+    input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 2px solid #ffffff;
+        float: left;
+        width: 80%;
+        background: #fff;
+      }
+
+    button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #1A638E;
+        color: white;
+        font-size: 17px;
+        border: 2px solid #ffffff;
+        border-left: none;
+        cursor: pointer;
+      }
+      
+    

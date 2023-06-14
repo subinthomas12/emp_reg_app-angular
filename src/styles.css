@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    background-image: url('./assets/3915891.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+
+}
+
+header{
+    height: 50px;
+    background-color: #031d29e3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+i{
+    color: #fff;
+    font-size: larger;
+}
+
+footer{
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #031d29e3;
+    position: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:450px){
+    header{
+        justify-content: center;
+        padding-left: 0px;
+    }
+}
+
+

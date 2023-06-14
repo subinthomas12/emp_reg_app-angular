@@ -1,0 +1,34 @@
+<div class="flexbox-container">
+
+    <div class="flexbox-item flexbox-item-1">
+        <form style="padding: 40px;" action="">
+
+            <div>
+                <h2>Log In</h2>
+            </div>
+
+            <div>
+                <label for="">Admin ID:</label> 
+                <input [(ngModel)]="aid" name="ad-id" class="form-control" type="text">
+            </div>
+
+            <div>
+                <label for="">Password:</label>
+                <input [(ngModel)]="psw" name="ad-psw" class="form-control" type="password">
+            </div>
+
+            <hr>
+
+            <div id="logi">
+                <button (click)="login()">LOGIN</button>
+            </div>
+
+           
+
+            <div id="reg-link">
+                <a routerLink="register" >Add Employee</a>
+            </div>
+
+        </form>
+    </div>
+</div>
